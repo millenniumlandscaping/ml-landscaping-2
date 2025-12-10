@@ -276,3 +276,73 @@ main {
   margin-bottom: 6px;
   font-size: 0.96rem;
 }
+
+/* ===== Squarespace-style texture ===== */
+
+/* Page rhythm */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Hero */
+.hero {
+  padding: 120px 0 80px;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  max-width: 720px;
+  line-height: 1.1;
+}
+
+.hero p {
+  max-width: 620px;
+  font-size: 1.05rem;
+  margin-top: 16px;
+  color: #5f6f5f;
+}
+
+/* Header polish */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e7efe7;
+}
+
+.nav a {
+  padding: 6px 2px;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: #3b7b3b;
+  transition: width 0.2s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Section blocks */
+.section {
+  padding: 100px 0;
+}
+
+.section.soft {
+  background: #f6fbf6;
+}
+
+/* Depth */
+.card,
+.section.soft {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  border-radius: 20px;
+}
+
