@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Millennium Landscaping</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-<header>
-<div class="logo"><a href="index.html">Millennium Landscaping</a></div>
-<nav id="navMenu">
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a href="cart.html">Cart</a>
-<a href="login.html">Login</a>
-</nav>
-<div class="hamburger" onclick="toggleMenu()">
-<span></span>
-<span></span>
-<span></span>
-</div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <div class="logo">Millennium Landscaping</div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
 </header>
-<script>
-function toggleMenu() {
-var menu = document.getElementById('navMenu');
-menu.classList.toggle('active');
-}
-</script>
-<main class="container">
-<h1>Contact Us</h1>
-<p>You can reach us at:<br>Phone: (555) 123-4567<br>Email: info@millenniumlandscaping.com</p>
+
+<main class="page section">
+  <h1>Contact</h1>
+  <p>
+    Reach out for quotes, questions, or project discussions.
+  </p>
 </main>
-<footer>
-&copy; 2025 Millennium Landscaping Inc. All rights reserved.
-</footer>
-<script src="assets/controller/nav.js"></script>
+
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.querySelector(".nav");
+  toggle.addEventListener("click", () => nav.classList.toggle("open"));
+</script>
+
 </body>
 </html>
